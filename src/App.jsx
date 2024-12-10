@@ -2,9 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import * as monaco from "monaco-editor";
 import { Editor } from "@monaco-editor/react";
 import { motion } from "framer-motion";
-import JupiterActivatedState from "../Components/jupiterActivatedState";
-import PracticeSimulationQuestion from "../Components/PracticeSimulationQuestion";
-import Timer from "../assets/Timer.svg";
+import JupiterActivatedState from "./components/jupiterActivatedState";
+import PracticeSimulationQuestion from "./components/PracticeSimulationQuestion";
+import Timer from "./assets/Timer.svg";
 
 const TechnicalPracticeSimulation = () => {
   const [timer, setTimer] = useState(15 * 60);
@@ -167,7 +167,7 @@ const TechnicalPracticeSimulation = () => {
               onMount={onMount}
               options={{
                 minimap: { enabled: false },
-                fontSize: "30px",
+                fontSize: "20px",
                 fontFamily: "'regular', Consolas, 'Courier New', monospace",
                 cursorBlinking: "smooth",
                 overviewRulerBorder: false,
